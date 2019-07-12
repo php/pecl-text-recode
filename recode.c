@@ -134,7 +134,8 @@ PHP_MSHUTDOWN_FUNCTION(recode)
 PHP_MINFO_FUNCTION(recode)
 {
 	php_info_print_table_start();
-	php_info_print_table_row(2, "Recode Support", "enabled");
+	php_info_print_table_header(2, "Recode Support", "enabled");
+	php_info_print_table_row(2, "Recode extension version", PHP_RECODE_VERSION);
 	php_info_print_table_end();
 }
 
