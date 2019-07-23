@@ -7,7 +7,7 @@ recode_string() function - Testing string conversions between latin1, UTF-8 and 
 function ascii2hex($ascii) {
     $hex = '';
     for ($i = 0; $i < strlen($ascii); $i++) {
-        $byte = dechex(ord($ascii{$i}));
+        $byte = dechex(ord($ascii[$i]));
         $byte = str_repeat('0', 2 - strlen($byte)).$byte;
         $hex .= $byte . " ";
     }
